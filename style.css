@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +12,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   margin: auto;
+  font-family: 'Concert One', sans-serif;
 }
 header {
   display: flex;
@@ -54,6 +58,12 @@ nav ul li a {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 18px;
 }
+nav ul li a:hover {
+  color: #853660;
+  text-decoration: underline;
+  transition: all 1s;
+  font-size: 20px;
+}
 main {
   max-width: 100%;
   margin: auto;
@@ -82,7 +92,7 @@ main {
   z-index: -10;
 }
 .hero_text {
-  max-width: 450px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -91,7 +101,9 @@ main {
 }
 .hero_text > h1 {
   margin-top: 60px;
-  font-size: 60px;
+  font-size: 55px;
+  font-family: 'Tourney', sans-serif;
+  line-height: 1.4;
 }
 
 .call-to-action {
@@ -364,4 +376,21 @@ footer a {
 }
 .footer-center ul li {
   padding: 16px;
+}
+.feedback {
+  font-family: sans-serif;
+  font-size: 24px;
+  box-shadow: 0px 0px 10px 0px silver;
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: 100;
+  transform: translateY(-200%);
+  position: absolute;
+  top: 0;
+  transition: all 1s ease-out;
+}
+.feedback--active {
+  transform: translateY(0);
 }
